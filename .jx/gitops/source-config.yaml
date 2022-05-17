@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jx3-spring-demo
+    - name: jx3-spring-test
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
