@@ -8,6 +8,8 @@ data:
     in_repo_config:
       enabled:
         chanmi910/jx3-kubernetes: true
+        chanmi910/jx3-spring-demo: true
+        chanmi910/jx3-spring-test: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +22,8 @@ data:
         skip-unknown-contexts: false
       merge_method:
         chanmi910/jx3-kubernetes: merge
+        chanmi910/jx3-spring-demo: merge
+        chanmi910/jx3-spring-test: merge
       queries:
       - labels:
         - approved
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - chanmi910/jx3-kubernetes
+        - chanmi910/jx3-spring-demo
+        - chanmi910/jx3-spring-test
       - labels:
         - updatebot
         missingLabels:
@@ -41,7 +47,9 @@ data:
         - needs-rebase
         repos:
         - chanmi910/jx3-kubernetes
-      target_url: http://lighthouse-jx.34.125.148.132.nip.io/merge/status
+        - chanmi910/jx3-spring-demo
+        - chanmi910/jx3-spring-test
+      target_url: http://lighthouse-jx.35.186.254.131.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

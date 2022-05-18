@@ -6,6 +6,14 @@ data:
       repos:
       - chanmi910/jx3-kubernetes
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - chanmi910/jx3-spring-demo
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - chanmi910/jx3-spring-test
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +29,16 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      chanmi910/jx3-spring-demo:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      chanmi910/jx3-spring-test:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +46,38 @@ data:
     plugins:
       chanmi910/jx3-kubernetes:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      chanmi910/jx3-spring-demo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      chanmi910/jx3-spring-test:
       - approve
       - assign
       - blunderbuss
@@ -55,6 +105,14 @@ data:
     - repos:
       - chanmi910/jx3-kubernetes
       trusted_org: todo
+    - repos:
+      - chanmi910/jx3-spring-demo
+      trusted_org: todo
+    - repos:
+      - chanmi910/jx3-spring-test
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
