@@ -15,7 +15,6 @@ spec:
     gitServer: https://github.com
     provider: kubernetes
     registry: docker.io
-    #registry: ghcr.io
   environments:
   - key: dev
     owner: chanmi910
