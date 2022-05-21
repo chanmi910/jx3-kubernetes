@@ -7,5 +7,8 @@ releases:
 - chart: dev/myapp
   version: 1.2.3
   name: myapp
+- chart: dev/jx3-msa-01
+  version: ersion=0.0.1
+  name: jx3-msa-01
 templates: {}
 renderedvalues: {}
