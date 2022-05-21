@@ -12,6 +12,7 @@ spec:
     - name: jx3-spring-demo
     - name: jx3-spring-test
     - name: node-example
+    - name: tt
     scheduler: in-repo
   - owner: hyan486
     provider: https://github.com
