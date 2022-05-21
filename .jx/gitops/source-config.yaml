@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: jx3-spring-demo
     - name: jx3-spring-test
+    - name: node-example
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
