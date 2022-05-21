@@ -13,6 +13,12 @@ spec:
     - name: jx3-spring-test
     - name: node-example
     scheduler: in-repo
+  - owner: hyan486
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: jx-test-app
+    scheduler: in-repo
   jenkinsServers:
   - groups:
     - owner: chanmi910
