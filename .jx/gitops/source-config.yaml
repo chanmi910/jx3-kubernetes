@@ -8,8 +8,6 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
-    - name: jx3-spring-demo
-      scheduler: environment-review-required
     - name: jx3-spring-test
     - name: node-example
     scheduler: in-repo
