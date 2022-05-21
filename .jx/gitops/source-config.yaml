@@ -9,11 +9,17 @@ spec:
     providerKind: github
     repositories:
     - name: jx3-spring-demo
-      #scheduler: environment-review-required
     - name: jx3-spring-test
     - name: node-example
-      #scheduler: environment-review-required
     scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: chanmi910
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: cicd-tekton
+    server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
