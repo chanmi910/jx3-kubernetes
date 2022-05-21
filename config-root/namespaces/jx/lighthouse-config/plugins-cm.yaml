@@ -71,7 +71,6 @@ data:
       - dog
       - pony
       chanmi910/jx3-spring-demo:
-      - config-updater
       - approve
       - assign
       - blunderbuss
@@ -79,12 +78,14 @@ data:
       - hold
       - lgtm
       - lifecycle
+      - override
       - size
       - trigger
       - wip
       - heart
       - cat
-      - override
+      - dog
+      - pony
       chanmi910/jx3-spring-test:
       - approve
       - assign
@@ -102,7 +103,6 @@ data:
       - dog
       - pony
       chanmi910/node-example:
-      - config-updater
       - approve
       - assign
       - blunderbuss
@@ -110,12 +110,14 @@ data:
       - hold
       - lgtm
       - lifecycle
+      - override
       - size
       - trigger
       - wip
       - heart
       - cat
-      - override
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:

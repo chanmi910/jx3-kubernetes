@@ -2,62 +2,17 @@ apiVersion: v1
 data:
   config.yaml: |
     branch-protection:
-      orgs:
-        chanmi910:
-          repos:
-            jx3-spring-demo:
-              required_status_checks:
-                contexts:
-                - promotion-build
-            node-example:
-              required_status_checks:
-                contexts:
-                - promotion-build
       protect-tested-repos: true
     github:
       LinkURL: null
     in_repo_config:
       enabled:
         chanmi910/jx3-kubernetes: true
+        chanmi910/jx3-spring-demo: true
         chanmi910/jx3-spring-test: true
+        chanmi910/node-example: true
     plank: {}
     pod_namespace: jx
-    postsubmits:
-      chanmi910/jx3-spring-demo:
-      - agent: tekton
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: promotion
-      chanmi910/node-example:
-      - agent: tekton
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: promotion
-    presubmits:
-      chanmi910/jx3-spring-demo:
-      - agent: tekton
-        always_run: true
-        context: promotion-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: promotion-build
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      chanmi910/node-example:
-      - agent: tekton
-        always_run: true
-        context: promotion-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: promotion-build
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
     prowjob_namespace: jx
     push_gateway:
       serve_metrics: true
@@ -82,7 +37,9 @@ data:
         - needs-rebase
         repos:
         - chanmi910/jx3-kubernetes
+        - chanmi910/jx3-spring-demo
         - chanmi910/jx3-spring-test
+        - chanmi910/node-example
       - labels:
         - updatebot
         missingLabels:
@@ -93,17 +50,9 @@ data:
         - needs-rebase
         repos:
         - chanmi910/jx3-kubernetes
-        - chanmi910/jx3-spring-test
-      - missingLabels:
-        - do-not-merge
-        - do-not-merge/hold
-        - do-not-merge/work-in-progress
-        - needs-ok-to-test
-        - needs-rebase
-        repos:
         - chanmi910/jx3-spring-demo
+        - chanmi910/jx3-spring-test
         - chanmi910/node-example
-        reviewApprovedRequired: true
       target_url: http://lighthouse-jx.35.186.254.131.nip.io/merge/status
 kind: ConfigMap
 metadata:

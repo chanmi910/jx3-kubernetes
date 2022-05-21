@@ -18,5 +18,5 @@ spec:
   repo: jx3-spring-demo
   scheduler:
     kind: ""
-    name: environment-review-required
+    name: in-repo
   url: https://github.com/chanmi910/jx3-spring-demo
