@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-production
 repositories:
 - name: dev
@@ -7,8 +11,12 @@ releases:
 - chart: dev/myapp
   version: 1.2.3
   name: myapp
+  values:
+  - jx-values.yaml
 - chart: dev/jx3-msa-01
   version: ersion=0.0.1
   name: jx3-msa-01
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
