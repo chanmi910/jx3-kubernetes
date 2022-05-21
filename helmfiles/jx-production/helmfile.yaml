@@ -14,7 +14,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev/jx3-msa-01
-  version: ersion=0.0.1
+  version: 0.0.1
   name: jx3-msa-01
   values:
   - jx-values.yaml
