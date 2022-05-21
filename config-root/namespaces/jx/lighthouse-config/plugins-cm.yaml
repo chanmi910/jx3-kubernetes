@@ -22,6 +22,14 @@ data:
       repos:
       - chanmi910/node-example
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - chanmi910/tt
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - hyan486/jx-test-app
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -53,6 +61,16 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       chanmi910/node-example:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      chanmi910/tt:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      hyan486/jx-test-app:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -143,6 +161,38 @@ data:
       - cat
       - dog
       - pony
+      chanmi910/tt:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      hyan486/jx-test-app:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -166,6 +216,12 @@ data:
       trusted_org: todo
     - repos:
       - chanmi910/node-example
+      trusted_org: todo
+    - repos:
+      - chanmi910/tt
+      trusted_org: todo
+    - repos:
+      - hyan486/jx-test-app
       trusted_org: todo
     welcome:
     - message_template: Welcome

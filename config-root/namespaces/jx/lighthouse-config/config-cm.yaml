@@ -12,6 +12,8 @@ data:
         chanmi910/jx3-spring-demo: true
         chanmi910/jx3-spring-test: true
         chanmi910/node-example: true
+        chanmi910/tt: true
+        hyan486/jx-test-app: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -28,6 +30,8 @@ data:
         chanmi910/jx3-spring-demo: merge
         chanmi910/jx3-spring-test: merge
         chanmi910/node-example: merge
+        chanmi910/tt: merge
+        hyan486/jx-test-app: merge
       queries:
       - labels:
         - approved
@@ -43,6 +47,8 @@ data:
         - chanmi910/jx3-spring-demo
         - chanmi910/jx3-spring-test
         - chanmi910/node-example
+        - chanmi910/tt
+        - hyan486/jx-test-app
       - labels:
         - updatebot
         missingLabels:
@@ -57,6 +63,8 @@ data:
         - chanmi910/jx3-spring-demo
         - chanmi910/jx3-spring-test
         - chanmi910/node-example
+        - chanmi910/tt
+        - hyan486/jx-test-app
       target_url: http://lighthouse-jx.35.186.254.131.nip.io/merge/status
 kind: ConfigMap
 metadata:
