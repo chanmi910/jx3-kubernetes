@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.35.186.254.131.nip.io
+releases:
+- chart: dev/myapp
+  version: 1.2.3
+  name: myapp
+templates: {}
+renderedvalues: {}
