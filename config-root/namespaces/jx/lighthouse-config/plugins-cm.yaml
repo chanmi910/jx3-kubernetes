@@ -14,6 +14,10 @@ data:
       repos:
       - chanmi910/jx3-spring-test
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - chanmi910/node-example
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -35,6 +39,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       chanmi910/jx3-spring-test:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      chanmi910/node-example:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -62,6 +71,21 @@ data:
       - dog
       - pony
       chanmi910/jx3-spring-demo:
+      - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - override
+      chanmi910/jx3-spring-test:
       - approve
       - assign
       - blunderbuss
@@ -77,7 +101,7 @@ data:
       - cat
       - dog
       - pony
-      chanmi910/jx3-spring-test:
+      chanmi910/node-example:
       - approve
       - assign
       - blunderbuss
@@ -110,6 +134,9 @@ data:
       trusted_org: todo
     - repos:
       - chanmi910/jx3-spring-test
+      trusted_org: todo
+    - repos:
+      - chanmi910/node-example
       trusted_org: todo
     welcome:
     - message_template: Welcome
