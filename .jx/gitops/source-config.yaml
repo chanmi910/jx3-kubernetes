@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jx3-msa-01
     - name: jx3-spring-demo
     - name: jx3-spring-test
     - name: node-example
