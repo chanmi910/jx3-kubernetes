@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         chanmi910/jx3-kubernetes: true
+        chanmi910/jx3-msa-01: true
         chanmi910/jx3-spring-demo: true
         chanmi910/jx3-spring-test: true
         chanmi910/node-example: true
@@ -23,6 +24,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         chanmi910/jx3-kubernetes: merge
+        chanmi910/jx3-msa-01: merge
         chanmi910/jx3-spring-demo: merge
         chanmi910/jx3-spring-test: merge
         chanmi910/node-example: merge
@@ -37,6 +39,7 @@ data:
         - needs-rebase
         repos:
         - chanmi910/jx3-kubernetes
+        - chanmi910/jx3-msa-01
         - chanmi910/jx3-spring-demo
         - chanmi910/jx3-spring-test
         - chanmi910/node-example
@@ -50,6 +53,7 @@ data:
         - needs-rebase
         repos:
         - chanmi910/jx3-kubernetes
+        - chanmi910/jx3-msa-01
         - chanmi910/jx3-spring-demo
         - chanmi910/jx3-spring-test
         - chanmi910/node-example
