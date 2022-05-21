@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: chanmi910
+    provider: github
+    repository: node-example
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: chanmi910-node-example
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/chanmi910/node-example.git
+  org: chanmi910
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: node-example
+  scheduler:
+    kind: ""
+    name: environment-review-required
+  url: https://github.com/chanmi910/node-example
