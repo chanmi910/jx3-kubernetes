@@ -20,6 +20,8 @@ spec:
     owner: chanmi910
     repository: jx3-kubernetes
   - key: staging
+    owner: chanmi910
+    repository: jx3-kubernetes
   - key: production
   ingress:
     domain: 35.186.254.131.nip.io
