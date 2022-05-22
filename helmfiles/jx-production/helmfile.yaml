@@ -6,13 +6,8 @@ environments:
 namespace: jx-production
 repositories:
 - name: dev
-  url: http://bucketrepo-jx.35.186.254.131.nip.io
+  url: https://chanmi910.github.io/helm-repo
 releases:
-- chart: dev/myapp
-  version: 1.2.3
-  name: myapp
-  values:
-  - jx-values.yaml
 - chart: dev/jx3-msa-01
   version: 0.0.1
   name: jx3-msa-01
