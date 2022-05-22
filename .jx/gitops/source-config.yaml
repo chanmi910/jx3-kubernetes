@@ -9,11 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jx3-msa-01
-    - name: jx3-msa-02
     - name: jx3-spring-demo
-    - name: jx3-spring-test
-    - name: node-example
-    - name: tt
     scheduler: in-repo
   - owner: hyan486
     provider: https://github.com
